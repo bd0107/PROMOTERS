@@ -295,8 +295,31 @@ footer {
         font-size: 0.9rem; /* Further reduce paragraph size */
     }
 
+    .navbar {
+        position: static; /* Reset positioning */
+        transform: none; /* Remove centering transform */
+        width: 100%; /* Ensure the navbar spans the full width */
+        text-align: center; /* Center the menu items */
+    }
+
+    .navbar .menu {
+        display: flex; /* Use flexbox to align items horizontally */
+        flex-direction: row; /* Ensure items are in a row */
+        justify-content: center; /* Center the menu items */
+        list-style: none; /* Remove default list styling */
+        padding: 0;
+        margin: 0;
+    }
+
     .navbar .menu li {
-        margin: 5px 0;
+        margin: 0 10px; /* Add spacing between menu items */
+    }
+
+    .navbar .menu li a {
+        text-decoration: none; /* Remove underline */
+        color: #000; /* Adjust color as needed */
+        font-size: 1rem; /* Adjust font size for better readability */
+        font-weight: bold; /* Make the text bold */
     }
 
     .about,
@@ -320,6 +343,38 @@ footer {
     .contact h2 {
         margin-top: 10px; /* Reduce margin for phones */
         font-size: 1.5rem; /* Smaller font size for smaller screens */
+    }
+
+    body {
+        font-size: 16px; /* Base font size for mobile */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Adjust heading size */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjust subheading size */
+    }
+
+    p {
+        font-size: 1rem; /* Adjust paragraph size */
+    }
+
+    .menu li a {
+        font-size: 1rem; /* Adjust menu link size */
+    }
+
+    .popup-email {
+        font-size: 1.2rem; /* Adjust email font size in popup */
+    }
+
+    .popup-tankyou {
+        font-size: 1rem; /* Adjust thank you message size in popup */
+    }
+
+    footer p {
+        font-size: 0.9rem; /* Adjust footer text size */
     }
 }
 
