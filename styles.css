@@ -1,0 +1,476 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(-45deg, #089acf, #ee5425, #e71364, #0bcea0); /* Gradient at -45 degrees */
+    background-size: 200% 200%; /* Makes the gradient larger for smooth animation */
+    animation: gradientMove 10s linear infinite; /* Circular animation */
+}
+
+/* Keyframes for the moving gradient */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 0%; /* Start at the top-left */
+    }
+    25% {
+        background-position: 100% 0%; /* Move to the top-right */
+    }
+    50% {
+        background-position: 100% 100%; /* Move to the bottom-right */
+    }
+    75% {
+        background-position: 0% 100%; /* Move to the bottom-left */
+    }
+    100% {
+        background-position: 0% 0%; /* Return to the top-left */
+    }
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the header stays above other content */
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better visibility */
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    position: relative; /* Allows precise positioning of the menu */
+}
+
+.logo {
+    max-height: 70px; /* Increase the maximum height for larger screens */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: auto; /* Pushes the menu away from the logo */
+    margin-left: 50px; /* Moves the logo 10px to the right */
+}
+
+.navbar {
+    position: absolute; /* Allows the menu to be centered */
+    left: 50%; /* Moves the menu to the center of the header */
+    transform: translateX(-50%); /* Centers the menu perfectly */
+}
+
+.navbar .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .menu li {
+    margin: 0 15px; /* Space between menu items */
+}
+
+.navbar .menu li a {
+    text-decoration: none;
+    color: #000; /* Adjust color as needed */
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('hero-image.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(54, 81, 124, 0.7);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1rem; /* Adjust the size as needed */
+    line-height: 1.5; /* Optional: Adjust line spacing for better readability */
+    text-align: center; /* Ensure the text remains centered */
+}
+
+.about,
+.services,
+.contact {
+    padding-top: 30px; /* Reduce padding at the top of the sections */
+    padding-bottom: 30px; /* Adjust bottom padding */
+    text-align: center;
+}
+
+.about h2,
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: .1px; /* Reduced padding to decrease height */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 0.5rem; /* Adjust font size for better fit */
+    line-height: 1.5; /* Ensure proper spacing for the text */
+}
+
+.services {
+    padding-top: 30px; /* Reduce padding at the top of the sections */
+    padding-bottom: 30px; /* Adjust bottom padding */
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services ul li {
+    margin: 10px 0;
+}
+
+/* Glazy separator between sections */
+.section-separator {
+    width: 80%; /* Adjust width as needed */
+    height: 3px; /* Thickness of the separator */
+    margin: 40px auto; /* Space above and below the separator */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)); /* Gradient effect */
+    border: none; /* Removes any default border */
+    border-radius: 5px; /* Adds rounded edges for a sleek look */
+}
+
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px; /* Space above the social container */
+}
+
+.social-container span {
+    font-size: 1rem; /* Adjust text size as needed */
+    color: #000; /* Text color */
+    margin-right: 8px; /* Space between the text and the icon */
+}
+
+.social-icon {
+    color: #4267B2; /* Facebook blue color */
+    font-size: 1.5rem; /* Adjust size as needed */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.social-icon:hover {
+    color: #365899; /* Darker Facebook blue on hover */
+}
+
+.about h2,
+.services h2,
+.contact h2 {
+    margin-top: 20px; /* Reduce the top margin */
+    margin-bottom: 10px; /* Adjust bottom margin */
+    font-size: 2rem; /* Keep the font size consistent */
+    text-align: center; /* Ensure the headers remain centered */
+}
+
+.hire-us-btn {
+    display: inline-block;
+    margin-top: 20px; /* Space above the button */
+    padding: 10px 20px; /* Button padding */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    background: rgba(255, 255, 255, 0.2); /* Transparent button background */
+    border: 2px solid #fff; /* White border */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.hire-us-btn:hover {
+    background: #fff; /* Solid white background on hover */
+    color: #089acf; /* Change text color to match the gradient */
+    border-color: #089acf; /* Change border color */
+}
+
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+    .header-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        position: static; /* Reset positioning */
+        transform: none; /* Remove centering transform */
+        margin-top: 10px;
+    }
+
+    .navbar .menu {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center;
+    }
+
+    .navbar .menu li {
+        margin: 10px 0; /* Add spacing between menu items */
+    }
+
+    .hero-content h1 {
+        font-size: 2rem; /* Reduce heading size */
+    }
+
+    .hero-content p {
+        font-size: 1rem; /* Reduce paragraph size */
+    }
+
+    .about,
+    .services,
+    .contact {
+        padding-top: 20px; /* Reduce padding for tablets */
+        padding-bottom: 20px;
+        padding: 30px 10px; /* Reduce padding for smaller screens */
+    }
+
+    .logo {
+        max-height: 60px; /* Slightly smaller for tablets */
+        margin-left: 20px; /* Reduce margin for smaller screens */
+    }
+
+    .about h2,
+    .services h2,
+    .contact h2 {
+        margin-top: 15px; /* Further reduce margin for tablets */
+        font-size: 1.8rem; /* Slightly smaller font size */
+    }
+
+    .services-list {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center; /* Center the stacked columns */
+        gap: 10px; /* Reduce spacing between columns */
+        border: none; /* Remove vertical lines */
+    }
+
+    .services-list .column {
+        border: none; /* Remove borders for stacked columns */
+        max-width: 100%; /* Allow columns to take full width */
+    }
+}
+
+/* For phones (480px and below) */
+@media (max-width: 480px) {
+    .logo {
+        max-height: 50px; /* Smaller for phones */
+        margin-left: 10px; /* Further reduce margin for very small screens */
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem; /* Further reduce heading size */
+    }
+
+    .hero-content p {
+        font-size: 0.9rem; /* Further reduce paragraph size */
+    }
+
+    .navbar .menu li {
+        margin: 5px 0;
+    }
+
+    .about,
+    .services,
+    .contact {
+        padding-top: 15px; /* Further reduce padding for phones */
+        padding-bottom: 15px;
+        padding: 20px 10px; /* Further reduce padding for very small screens */
+    }
+
+    .social-container span {
+        font-size: 0.9rem; /* Reduce text size */
+    }
+
+    .social-icon {
+        font-size: 1.2rem; /* Reduce icon size */
+    }
+
+    .about h2,
+    .services h2,
+    .contact h2 {
+        margin-top: 10px; /* Reduce margin for phones */
+        font-size: 1.5rem; /* Smaller font size for smaller screens */
+    }
+}
+
+.services-list {
+    display: flex; /* Use flexbox to create columns */
+    justify-content: center; /* Center all columns in the container */
+    gap: 20px; /* Add spacing between columns */
+    padding: 20px; /* Add padding inside the container */
+}
+
+.services-list .column {
+    flex: 1; /* Each column takes equal space */
+    max-width: 400px; /* Increase the width to fit longer text */
+    padding: 0 10px; /* Add padding inside each column */
+    border-left: 2px solid rgba(0, 0, 0, 0.3); /* Add vertical line between columns */
+}
+
+.services-list .column:first-child {
+    border-left: none; /* Remove the left border for the first column */
+}
+
+.services-list ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+.services-list li {
+    margin: 10px 0; /* Add spacing between list items */
+    font-size: 1rem; /* Adjust font size */
+    text-align: left; /* Align text to the left */
+    position: relative; /* Position relative for the pseudo-element */
+    padding-left: 20px; /* Add space for the dot */
+}
+
+.services-list li::before {
+    content: ''; /* Add an empty content for the dot */
+    position: absolute;
+    left: 0; /* Position the dot to the left of the text */
+    top: 50%; /* Center the dot vertically */
+    transform: translateY(-50%); /* Adjust for perfect centering */
+    width: 8px; /* Size of the dot */
+    height: 8px; /* Size of the dot */
+    background-color: #a89c9c; /* Color of the dot (black) */
+    border-radius: 50%; /* Make the dot circular */
+}
+
+/* Popup styles */
+/* Animation keyframes */
+@keyframes bounceFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) translate(-50%, -50%);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.1) translate(-50%, -50%);
+    }
+    100% {
+        transform: scale(1) translate(-50%, -50%);
+    }
+}
+
+/* Popup Base Style */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 699px;
+    height: 699px;
+    background-color: white; /* Background color of the popup */
+    color: black; /* Text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem; /* Adjust font size */
+    border-radius: 25%; /* Optional: Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visibility */
+    z-index: 1000; /* Ensure it appears above other elements */
+    visibility: hidden; /* Initially hidden */
+    opacity: 0; /* Initially transparent */
+    transition: opacity 0.3s ease; /* Smooth fade-in effect */
+}
+
+.popup.visible {
+    visibility: visible; /* Make it visible */
+    opacity: 1; /* Fully opaque */
+    animation: bounceFadeIn 0.5s ease; /* Bounce and fade-in effect */
+
+}
+
+/* Popup Close button */
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden; /* Completely hide the popup when not needed */
+    opacity: 0; /* Fully transparent */
+}
+
+.popup-emoji {
+    font-size: 9rem; /* Adjust the size as needed */
+    text-align: center; /* Center the emoji */
+    margin: 10px 0; /* Add spacing around the emoji */
+}
+.popup-text {
+    font-size: 1.5rem; /* Adjust the size as needed */
+    text-align: center; /* Center the text */
+    margin: 10px 0; /* Add spacing around the text */
+    font-family: sans-serif; /* Use sans-serif font for text */
+    font-weight: bold; /* Make the text bold */
+}
+.popup-email {
+    font-size: 2.0rem; /* Adjust the size as needed */
+    text-align: center; /* Center the email */
+    margin: 10px 0; /* Add spacing around the email */
+    font-family: 'Courier New', Courier, monospace; /* Use monospace font for email */ 
+    text-decoration: none;
+}
+.popup-tankyou {
+    font-size: 1.5rem; /* Adjust the size as needed */
+    text-align: center; /* Center the thank you message */
+    margin: 80px 0 0; /* Add spacing around the thank you message */
+    font-family: 'Times New Roman', Times, serif /* Use monospace font for thank you message */ 
+}
+
+/* Responsive styles for the popup */
+@media (max-width: 768px) {
+    .popup {
+        width: 90%; /* Full width on smaller screens */
+        height: auto; /* Auto height to fit content */
+        padding: 20px; /* Add padding inside the popup */
+        border-radius: 10%; /* Adjust border radius for smaller screens */
+    }
+
+    .popup h2 {
+        font-size: 2rem; /* Adjust heading size */
+    }
+
+    .popup p {
+        font-size: 1rem; /* Adjust paragraph size */
+    }
+}
+
