@@ -244,7 +244,7 @@ footer {
     }
 
     .hero-content p {
-        font-size: 3rem; /* Reduce paragraph size */
+        font-size: 9rem; /* Reduce paragraph size */
     }
 
     .about,
@@ -277,6 +277,10 @@ footer {
     .services-list .column {
         border: none; /* Remove borders for stacked columns */
         max-width: 100%; /* Allow columns to take full width */
+    }
+
+        p {
+        font-size: 9rem; /* Adjust paragraph size */
     }
 }
 
