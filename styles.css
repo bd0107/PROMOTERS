@@ -244,7 +244,7 @@ footer {
     }
 
     .hero-content p {
-        font-size: 9rem; /* Reduce paragraph size */
+        font-size: 1rem; /* Reduce paragraph size */
     }
 
     .about,
@@ -278,10 +278,6 @@ footer {
         border: none; /* Remove borders for stacked columns */
         max-width: 100%; /* Allow columns to take full width */
     }
-
-        p {
-        font-size: 9rem; /* Adjust paragraph size */
-    }
 }
 
 /* For phones (480px and below) */
@@ -296,11 +292,11 @@ footer {
     }
 
     .hero-content p {
-        font-size: 1rem; /* Further reduce paragraph size */
+        font-size: 0.9rem; /* Further reduce paragraph size */
     }
 
     .navbar .menu li {
-        margin: 2px 0;
+        margin: 5px 0;
     }
 
     .about,
@@ -327,35 +323,35 @@ footer {
     }
 
     body {
-        font-size: 18px; /* Base font size for mobile */
+        font-size: 16px; /* Base font size for mobile */
     }
 
     h1 {
-        font-size: 2rem; /* Adjust heading size */
+        font-size: 1.8rem; /* Adjust heading size */
     }
 
     h2 {
-        font-size: 1.8rem; /* Adjust subheading size */
+        font-size: 1.5rem; /* Adjust subheading size */
     }
 
     p {
-        font-size: 1.2rem; /* Adjust paragraph size */
+        font-size: 1rem; /* Adjust paragraph size */
     }
 
     .menu li a {
-        font-size: 1.2rem; /* Adjust menu link size */
+        font-size: 1rem; /* Adjust menu link size */
     }
 
     .popup-email {
-        font-size: 1.5rem; /* Adjust email font size in popup */
+        font-size: 1.2rem; /* Adjust email font size in popup */
     }
 
     .popup-tankyou {
-        font-size: 1.2rem; /* Adjust thank you message size in popup */
+        font-size: 1rem; /* Adjust thank you message size in popup */
     }
 
     footer p {
-        font-size: 1rem; /* Adjust footer text size */
+        font-size: 0.9rem; /* Adjust footer text size */
     }
 }
 
