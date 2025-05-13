@@ -321,6 +321,38 @@ footer {
         margin-top: 10px; /* Reduce margin for phones */
         font-size: 1.5rem; /* Smaller font size for smaller screens */
     }
+
+    body {
+        font-size: 16px; /* Base font size for mobile */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Adjust heading size */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjust subheading size */
+    }
+
+    p {
+        font-size: 1rem; /* Adjust paragraph size */
+    }
+
+    .menu li a {
+        font-size: 1rem; /* Adjust menu link size */
+    }
+
+    .popup-email {
+        font-size: 1.2rem; /* Adjust email font size in popup */
+    }
+
+    .popup-tankyou {
+        font-size: 1rem; /* Adjust thank you message size in popup */
+    }
+
+    footer p {
+        font-size: 0.9rem; /* Adjust footer text size */
+    }
 }
 
 .services-list {
