@@ -59,20 +59,24 @@ header {
 }
 
 .navbar .menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
+    display: flex; /* Use flexbox to align items in a row */
+    flex-direction: row; /* Ensure items are in a single row */
+    justify-content: center; /* Center the menu items */
+    align-items: center; /* Vertically align the items */
+    list-style: none; /* Remove default list styling */
     padding: 0;
+    margin: 0;
 }
 
 .navbar .menu li {
-    margin: 0 15px; /* Space between menu items */
+    margin: 0 15px; /* Add spacing between menu items */
 }
 
 .navbar .menu li a {
-    text-decoration: none;
+    text-decoration: none; /* Remove underline */
     color: #000; /* Adjust color as needed */
-    font-weight: bold;
+    font-size: 1rem; /* Adjust font size for better readability */
+    font-weight: bold; /* Make the text bold */
 }
 
 .hero {
@@ -227,16 +231,30 @@ footer {
     .navbar {
         position: static; /* Reset positioning */
         transform: none; /* Remove centering transform */
-        margin-top: 10px;
+        width: 100%; /* Ensure the navbar spans the full width */
+        text-align: center; /* Center the menu items */
     }
 
     .navbar .menu {
-        flex-direction: column; /* Stack menu items vertically */
-        align-items: center;
+        display: flex; /* Use flexbox to align items horizontally */
+        flex-direction: row; /* Ensure items are in a row */
+        justify-content: center; /* Center the menu items */
+        list-style: none; /* Remove default list styling */
+        padding: 0;
+        margin: 0;
+        flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+        overflow-x: auto; /* Allow horizontal scrolling if needed */
     }
 
     .navbar .menu li {
-        margin: 10px 0; /* Add spacing between menu items */
+        margin: 0 10px; /* Add spacing between menu items */
+    }
+
+    .navbar .menu li a {
+        text-decoration: none; /* Remove underline */
+        color: #000; /* Adjust color as needed */
+        font-size: 1rem; /* Adjust font size for better readability */
+        font-weight: bold; /* Make the text bold */
     }
 
     .hero-content h1 {
@@ -309,6 +327,8 @@ footer {
         list-style: none; /* Remove default list styling */
         padding: 0;
         margin: 0;
+        flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+        overflow-x: auto; /* Allow horizontal scrolling if needed */
     }
 
     .navbar .menu li {
@@ -318,7 +338,7 @@ footer {
     .navbar .menu li a {
         text-decoration: none; /* Remove underline */
         color: #000; /* Adjust color as needed */
-        font-size: 1rem; /* Adjust font size for better readability */
+        font-size: 0.9rem; /* Slightly reduce font size for smaller screens */
         font-weight: bold; /* Make the text bold */
     }
 
