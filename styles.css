@@ -292,7 +292,7 @@ footer {
     }
 
     .hero-content p {
-        font-size: 3rem; /* Further reduce paragraph size */
+        font-size: 9rem; /* Further reduce paragraph size */
     }
 
     .navbar .menu li {
@@ -335,7 +335,7 @@ footer {
     }
 
     p {
-        font-size: 3rem; /* Adjust paragraph size */
+        font-size: 9rem; /* Adjust paragraph size */
     }
 
     .menu li a {
